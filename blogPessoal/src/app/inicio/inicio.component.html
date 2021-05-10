@@ -54,11 +54,6 @@
 
 </div>
 
-
-
-
-
-  
   <!-- Modal -->
   <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -70,20 +65,20 @@
           </button>
         </div>
         <div class="modal-body">
-
+<!--formulario-->
           <div class="form-group">
             <label for="titulo">Título</label>
             <input type="text" class="form-control" id="titulo" placeholder="Digite o titulo">
         </div>
        
             <div class="form-group">
-                <label for="titulo">Título</label>
+                <label for="texto">Texto</label>
                 <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="texto">Escolha um tema ou <a href="">cadastre um novo </a>: </label>
-                    <select name="tema" id="tema">
+                    <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um novo </a>: </label>
+                    <select name="tema" id="tema" class="form-control">
                     <option value="">Temas</option>
                 </select>
                     </div>
