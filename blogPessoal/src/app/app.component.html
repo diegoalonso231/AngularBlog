@@ -1,5 +1,7 @@
+
 <app-menu *ngIf='auth.logado()' ></app-menu>
 <!--ngIf espera uma condicional, assim que estiver logado vai me retornar app-menu, se não estiver logado não vai aparecer-->
 <router-outlet></router-outlet>
 
 <app-rodape *ngIf='auth.logado()'></app-rodape>
+

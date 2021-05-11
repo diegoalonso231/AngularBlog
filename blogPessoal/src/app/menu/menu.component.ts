@@ -13,8 +13,10 @@ export class MenuComponent implements OnInit {
   foto = environment.foto
   token = environment.token
 
-  constructor() { }
-  private router: Router
+  constructor( 
+    private router: Router
+    ) { }
+ 
   ngOnInit(){
   }
 

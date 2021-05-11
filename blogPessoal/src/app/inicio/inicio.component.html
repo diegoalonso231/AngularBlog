@@ -5,22 +5,22 @@
 
         <div class="row d-flex justfiy-content-center">
             <div class="col-md-6 text-white"><!--CorTexto-->
-                <h1 class="fs-54">Seja bem vinda(a)!</h1>
+                <h1 class="fs-54">Seja bem vindo(a)!</h1>
                  <h5 class="fs-18">expresse aqui os seus pensamentos e opniões!</h5>
             </div>
         </div>
 
         <div class="row d-flex justfiy-content-center mt-3 mb-5">
             <div class="col-md-6">
-                <button class="btn btn-light mr-2" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
-                <a  class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
+                <button class="btn btn-outline-light mr-2" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
+                <a  class="btn btn-outline-light mt-2" href="#postagens">Ver Postagens</a>
             </div>
         </div>
     </div>
 
     <div class="col-md-6 d-flex justfiy-content-center">
 
-        <img src="LINKdaIMAGEMnoMGUR.COM/.....png" alt="" width="500px" height="500px"> <!--CONTROLEI O TAMANHO da imagem para não ficar muito grande-->
+        <img src="../../assets/img/fotoMana01.jpg" alt="" width="500px" height="500px"> <!--CONTROLEI O TAMANHO da imagem para não ficar muito grande-->
     </div>
 </div>
 
@@ -55,7 +55,7 @@
 </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -77,9 +77,10 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um novo </a>: </label>
+                    <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um novo </a></label>
                     <select name="tema" id="tema" class="form-control">
                     <option value="">Temas</option>
+                    <!--COLOCAR um for aqui-->
                 </select>
                     </div>
 
