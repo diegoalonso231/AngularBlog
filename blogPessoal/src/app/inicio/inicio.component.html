@@ -4,7 +4,7 @@
     <div class="col-md-6">
 
         <div class="row d-flex justfiy-content-center">
-            <div class="col-md-6 text-white"><!--CorTexto-->
+            <div class="col-md-6 text-white"><!--usando 6 coluna das 12, e colocando CorTexto-->
                 <h1 class="fs-54">Seja bem vindo(a)!</h1>
                  <h5 class="fs-18">expresse aqui os seus pensamentos e opniões!</h5>
             </div>
@@ -13,7 +13,7 @@
         <div class="row d-flex justfiy-content-center mt-3 mb-5">
             <div class="col-md-6">
                 <button class="btn btn-outline-light mr-2" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
-                <a  class="btn btn-outline-light mt-2" href="#postagens">Ver Postagens</a>
+                <a  class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
 
     <nav>
         <div class="nav nav-tabs d-flex justfiy-content-center" id="nav-tab" role="tablist">
-
+          <!--NÃO ESTA FUNCIONANDO O JUSTFIY-CONTENT-CENTER-->
           <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
 
           <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens </a>
@@ -40,6 +40,7 @@
 
         </div>
       </nav>
+              <!--ERA PRA LINHA 43~54 MOSTRAR OS BOTÕES CONFORME FOSSE CLICANDO, NÃO FAZ ISSO FICA UM TXT NO SITE EM BAIXO DOS BOTÕES TODAS AS POSTAGENS/MINHAS POSTAGENS E POSTAGENS POR TEMA-->
       <div class="tab-content" id="nav-tabContent">
 
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens">
@@ -75,9 +76,9 @@
                 <label for="texto">Texto</label>
                 <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
                 </div>
-
+                <!--RouterLink parece que não está funcionando-->
                 <div class="form-group">
-                    <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um novo </a></label>
+                    <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um novo </a>: </label>
                     <select name="tema" id="tema" class="form-control">
                     <option value="">Temas</option>
                     <!--COLOCAR um for aqui-->
